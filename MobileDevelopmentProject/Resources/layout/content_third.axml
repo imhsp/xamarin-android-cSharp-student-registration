@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+    
+    <TextView
+        android:text="Course choose "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/textview3" />
+        
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/textview3"
+		android:id="@+id/spinnerCourse"
+        android:layout_margin="5dp"/>
+	
+    <TextView
+		android:text="Course hours: 0"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/spinnerCourse"
+		android:id="@+id/courseHours"
+        android:layout_margin="5dp"/>
+        
+    <TextView
+        android:text="Course fees: $0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseHours"
+        android:id="@+id/courseFees"
+        android:layout_margin="5dp"/>
+        
+        <Button
+            android:text="Add course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/courseFees"
+            android:layout_margin="5dp"
+            android:id="@+id/buttonAddcourse" />
+        
+	<TextView
+		android:text="Total hours: 0"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/buttonAddcourse"
+        android:layout_margin="5dp"
+		android:id="@+id/textViewTotalhours" />
+        
+        <TextView
+        android:text="Total Fees: $0"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalhours"
+        android:layout_margin="5dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textViewTotalfees" />
+        
+		<Button
+			android:text="Submit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+			android:layout_below="@id/textViewTotalfees"
+            android:layout_margin="5dp"
+			android:id="@+id/buttonSubmitThird" />
+        
+   
+</RelativeLayout>
+</ScrollView>

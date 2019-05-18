@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	android:minWidth="25px"
+	android:minHeight="25px">
+    
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+    
+	<TextView
+		android:text="Student Name: "
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+		android:id="@+id/welcome" />
+    <TextView
+        android:text="Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/welcome"
+        android:id="@+id/textview1" />
+    <TextView
+        android:text="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/welcome"
+        android:id="@+id/textview2" />
+	<SeekBar
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/welcome"
+		android:layout_margin="5dp"
+        android:progress="15"
+        android:layout_toRightOf="@id/textview1"
+        android:layout_toLeftOf="@id/textview2"
+		android:id="@+id/seekBarAge" />
+    
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/seekBarAge"
+        android:layout_margin="5dp"
+        android:hint="Street address"
+		android:id="@+id/editTextStreet" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStreet"
+        android:layout_margin="5dp"
+        android:hint="City"
+        android:id="@+id/editTextCity" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCity"
+        android:layout_margin="5dp"
+        android:hint="Postal code"
+        android:id="@+id/editTextPostal" />
+	<EditText
+		android:inputType="phone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/editTextPostal"
+        android:layout_margin="5dp"
+        android:hint="Contact number"
+		android:id="@+id/editTextPhone" />
+    <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:layout_below="@id/editTextPhone"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Graduated"
+                android:id="@+id/radioButton1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continued"
+                android:id="@+id/radioButton2" />
+            
+    </RadioGroup>
+	<Button
+		android:text="Submit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/radioGroup1"
+        android:layout_centerHorizontal="true"
+		android:id="@+id/buttonSubmit" />
+        
+		
+		
+    
+
+</RelativeLayout>
+</ScrollView>
